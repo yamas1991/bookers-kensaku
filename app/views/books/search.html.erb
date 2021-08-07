@@ -1,0 +1,8 @@
+<ul><% @kensakubooks.each do |book| %>
+  <li>
+    <%= link_to book.title, book %>
+    <%= book.created_at %>
+    <%= book.body %>
+    <% end %>
+  </li>
+</ul>
